@@ -1,9 +1,8 @@
 {
   "manifest_version": 2,
   "name": "disableAD",
-  // 插件的版本
-  "version": "1.0.1",
-  // 需要直接注入页面的JS
+  "version": "1.0.2",
+  
   "content_scripts":
   [
     {
@@ -24,6 +23,10 @@
     {
       "matches": ["https://blog.csdn.net/*"],
       "js": ["js/csdn.js"]
+    },
+    {
+      "matches": ["https://www.cnblogs.com/*"],
+      "js": ["js/cnblogs.js"]
     }
   ]
 }

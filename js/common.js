@@ -4,3 +4,7 @@ function cleanByClassName(className) {
         ads[i].style.display = "none";
     }
 }
+
+function cleanById(id) {
+    document.getElementById(id).style.display = "none";
+}
